@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tb3_nav2_demo</name>
+  <version>1.0.0</version>
+  <description>
+    TurtleBot3 (Waffle) autonomous navigation with Nav2 in Gazebo, in a world
+    with obstacles that are not on the map.
+  </description>
+  <maintainer email="anubhabdas111@gmail.com">Anubhab Das</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_minimal_tb3_sim</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- tests/harness.py -->
+  <test_depend>nav2_simple_commander</test_depend>
+  <test_depend>tf2_ros_py</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

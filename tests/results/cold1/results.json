@@ -1,0 +1,82 @@
+{
+ "mode": "demo",
+ "real_time_factor": 0.99,
+ "results": [
+  {
+   "test": "startup_and_localization",
+   "expected": "Nav2 active, map->base_footprint TF present, AMCL at spawn pose",
+   "verdict": "PASS",
+   "nav2_active_after_s": 5.9,
+   "init_loc_err_m": 0.001,
+   "max_cmd_vx": 0.0,
+   "max_cmd_wz": 0.0,
+   "closest_scan_m": 0.48,
+   "collision_monitor": [],
+   "speed_limits_ok": true,
+   "gt_xy": [
+    -2.001,
+    -0.5
+   ],
+   "gt_yaw": -0.0,
+   "gt_roll_pitch_max": 0.006,
+   "loc_err_m": 0.001,
+   "loc_yaw_err": 0.0
+  },
+  {
+   "test": "demo_goal1_unmapped_box",
+   "expected": "SUCCEEDED; plan first goes through box gap, then reroutes after lidar sees it",
+   "verdict": "PASS",
+   "result": "SUCCEEDED",
+   "secs": 33.1,
+   "recoveries": 0,
+   "goal_xy_err": 0.166,
+   "plans": 33,
+   "plan_through_box_before_seen": true,
+   "final_plans_avoid_box": true,
+   "reroute_after_s": 10.2,
+   "max_cmd_vx": 0.26,
+   "max_cmd_wz": 1.709,
+   "closest_scan_m": 0.347,
+   "collision_monitor": [],
+   "speed_limits_ok": true,
+   "gt_xy": [
+    1.946,
+    0.579
+   ],
+   "gt_yaw": 0.219,
+   "gt_roll_pitch_max": 0.006,
+   "loc_err_m": 0.16,
+   "loc_yaw_err": 0.052
+  },
+  {
+   "test": "demo_goal2_live_box",
+   "expected": "SUCCEEDED; box spawned ahead on planned route, robot reroutes",
+   "verdict": "PASS",
+   "result": "SUCCEEDED",
+   "secs": 32.9,
+   "recoveries": 0,
+   "goal_xy_err": 0.037,
+   "spawn_ok_at_s_x_y": [
+    true,
+    15.1,
+    0.56,
+    -0.59
+   ],
+   "plan_through_spot_before_spawn": true,
+   "final_plans_avoid_box": true,
+   "max_cmd_vx": 0.26,
+   "max_cmd_wz": 1.8,
+   "closest_scan_m": 0.313,
+   "collision_monitor": [],
+   "speed_limits_ok": true,
+   "gt_xy": [
+    -1.974,
+    -0.475
+   ],
+   "gt_yaw": -0.15,
+   "gt_roll_pitch_max": 0.006,
+   "loc_err_m": 0.06,
+   "loc_yaw_err": 0.007
+  }
+ ]
+}

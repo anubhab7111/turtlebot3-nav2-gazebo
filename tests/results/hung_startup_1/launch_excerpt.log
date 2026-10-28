@@ -1,0 +1,19 @@
+64:[lifecycle_manager-19] [INFO] [1793218809.307329332] [lifecycle_manager_navigation]: Creating
+80:[lifecycle_manager-19] [INFO] [1793218809.313243600] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+109:[lifecycle_manager-19] [INFO] [1793218809.367449947] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+110:[lifecycle_manager-19] [INFO] [1793218809.367501313] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+155:[lifecycle_manager-19] [INFO] [1793218809.435901785] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+159:[lifecycle_manager-19] [INFO] [1793218809.453057184] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+180:[lifecycle_manager-19] [INFO] [1793218809.502969583] [lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+181:[route_server-12] [INFO] [1793218809.503186124] [route_server]: Configuring
+183:[route_server-12] [INFO] [1793218809.527587922] [route_server]: Configuring geojson graph file loader
+186:[route_server-12] [INFO] [1793218809.529059146] [route_server]: Configuring distance scorer.
+188:[route_server-12] [INFO] [1793218809.529328091] [route_server]: Configuring costmap scorer.
+190:[route_server-12] [INFO] [1793218809.531007877] [route_server]: Configuring Adjust speed limit operation.
+192:[route_server-12] [INFO] [1793218809.531955436] [route_server]: Configuring Rerouting service operation.
+198:[route_server-12] [WARN] [1793218809.636841709] [route_server.rclcpp]: failed to send response to /route_server/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:153, at ./src/rcl/service.c:400
+243:[lifecycle_manager-19] [INFO] [1793226440.264524568] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+336:[ERROR] [lifecycle_manager-19]: process has died [pid 25976, exit code -9, cmd '/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args --log-level info --ros-args -r __node:=lifecycle_manager_navigation -p use_sim_time:=True --params-file /tmp/launch_params_hnwg3mtf --params-file /tmp/launch_params_vtzmko0s'].
+224:[gz-4] Exception sending a multicast message:Network is unreachable
+225:[gz-4] Exception sending a multicast message:Network is unreachable
+226:[gz-4] Exception sending a multicast message:Network is unreachable
